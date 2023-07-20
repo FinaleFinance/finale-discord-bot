@@ -75,7 +75,7 @@ client.on('interactionCreate', async interaction => {
 
         await interaction.followUp({ content: `${user}, your token has been sent! Transaction hash: https://goerli.explorer.zksync.io/tx/${tx.hash}`, ephemeral: true });
 
-        const roleName = "Abc1";
+        const roleName = "Pathfinder";
         const role = guild.roles.cache.find(r => r.name === roleName);
         if (!role) {
             console.error(`Role not found: ${roleName}`);
